@@ -1,20 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// 
 /// </summary>
 public class SceneSwitcher : MonoBehaviour
 {
-
-    void Start()
+    public void SwitchScene(string value)
     {
-        
-    }
-
-    void Update()
-    {
-        
+        SceneManager.LoadScene(value);
     }
 }
